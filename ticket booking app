@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Booking App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎫 Ticket Booking App</h1>
+  <div class="card">
+    <form onsubmit="event.preventDefault(); bookTicket();">
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+      <select id="destination" required>
+        <option value="">--Select Destination--</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Mumbai">Mumbai</option>
+      </select><br>
+      <input type="number" id="tickets" placeholder="Number of Tickets" required><br>
+      <button type="submit">Book Now</button>
+    </form>
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
